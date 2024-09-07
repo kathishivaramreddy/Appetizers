@@ -15,7 +15,7 @@ final class NetworkManager {
     
     static let baseURL = "https://seanallen-course-backend.herokuapp.com/swiftui-fundamentals/"
     
-    private let appetizerURL = "appetizers"
+    private let appetizerURL = baseURL + "appetizers"
     
     func getAppetizers(completionHandler: @escaping (Result<[Appetizer], APError>) -> Void) {
         
@@ -29,7 +29,7 @@ final class NetworkManager {
         
          let task = URLSession.shared.dataTask(with: urlRequest, completionHandler: { data, response, error in
             
-            guard let _ = error else {
+            if let _ = error {
                 
                 completionHandler(.failure(.unableToComplete))
                 return
