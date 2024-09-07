@@ -18,6 +18,7 @@
 		F5D426192C8A0F0600DC0DA3 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D426182C8A0F0600DC0DA3 /* AccountView.swift */; };
 		F5D4261B2C8A0F1A00DC0DA3 /* AppetizerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D4261A2C8A0F1A00DC0DA3 /* AppetizerListView.swift */; };
 		F5D4261D2C8A2FCA00DC0DA3 /* Appetizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D4261C2C8A2FCA00DC0DA3 /* Appetizer.swift */; };
+		F5D4261F2C8BF78600DC0DA3 /* AppetizerListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D4261E2C8BF78600DC0DA3 /* AppetizerListCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		F5D426182C8A0F0600DC0DA3 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		F5D4261A2C8A0F1A00DC0DA3 /* AppetizerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListView.swift; sourceTree = "<group>"; };
 		F5D4261C2C8A2FCA00DC0DA3 /* Appetizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appetizer.swift; sourceTree = "<group>"; };
+		F5D4261E2C8BF78600DC0DA3 /* AppetizerListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				F5D425EC2C865C7400DC0DA3 /* AppetizerApp.swift */,
+				F5D4261E2C8BF78600DC0DA3 /* AppetizerListCellView.swift */,
 				F5D425EE2C865C7400DC0DA3 /* AppetizerTabView.swift */,
 				F5D425F02C865C7600DC0DA3 /* Assets.xcassets */,
 				F5D425F22C865C7600DC0DA3 /* Preview Content */,
@@ -273,6 +276,7 @@
 				F5D426192C8A0F0600DC0DA3 /* AccountView.swift in Sources */,
 				F5D425EF2C865C7400DC0DA3 /* AppetizerTabView.swift in Sources */,
 				F5D425ED2C865C7400DC0DA3 /* AppetizerApp.swift in Sources */,
+				F5D4261F2C8BF78600DC0DA3 /* AppetizerListCellView.swift in Sources */,
 				F5D426172C8A0ED800DC0DA3 /* OrderView.swift in Sources */,
 				F5D4261B2C8A0F1A00DC0DA3 /* AppetizerListView.swift in Sources */,
 			);
