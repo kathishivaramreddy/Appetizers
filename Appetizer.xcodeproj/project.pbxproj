@@ -23,6 +23,7 @@
 		F5D426232C8CBA0200DC0DA3 /* APError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D426222C8CBA0200DC0DA3 /* APError.swift */; };
 		F5D426252C8CC32B00DC0DA3 /* AppetizerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D426242C8CC32B00DC0DA3 /* AppetizerListViewModel.swift */; };
 		F5D426272C8CD9ED00DC0DA3 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D426262C8CD9ED00DC0DA3 /* Alert.swift */; };
+		F5D426292C8D51AA00DC0DA3 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D426282C8D51AA00DC0DA3 /* RemoteImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		F5D426222C8CBA0200DC0DA3 /* APError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APError.swift; sourceTree = "<group>"; };
 		F5D426242C8CC32B00DC0DA3 /* AppetizerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListViewModel.swift; sourceTree = "<group>"; };
 		F5D426262C8CD9ED00DC0DA3 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		F5D426282C8D51AA00DC0DA3 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 				F5D426222C8CBA0200DC0DA3 /* APError.swift */,
 				F5D426242C8CC32B00DC0DA3 /* AppetizerListViewModel.swift */,
 				F5D426262C8CD9ED00DC0DA3 /* Alert.swift */,
+				F5D426282C8D51AA00DC0DA3 /* RemoteImage.swift */,
 			);
 			path = Appetizer;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 				F5D4261D2C8A2FCA00DC0DA3 /* Appetizer.swift in Sources */,
 				F5D426232C8CBA0200DC0DA3 /* APError.swift in Sources */,
 				F5D426192C8A0F0600DC0DA3 /* AccountView.swift in Sources */,
+				F5D426292C8D51AA00DC0DA3 /* RemoteImage.swift in Sources */,
 				F5D426252C8CC32B00DC0DA3 /* AppetizerListViewModel.swift in Sources */,
 				F5D425EF2C865C7400DC0DA3 /* AppetizerTabView.swift in Sources */,
 				F5D425ED2C865C7400DC0DA3 /* AppetizerApp.swift in Sources */,

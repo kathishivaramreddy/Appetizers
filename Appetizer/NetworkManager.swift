@@ -5,7 +5,7 @@
 //  Created by Shiva on 9/6/24.
 //
 
-import Foundation
+import UIKit
 
 final class NetworkManager {
     
@@ -16,6 +16,8 @@ final class NetworkManager {
     static let baseURL = "https://seanallen-course-backend.herokuapp.com/swiftui-fundamentals/"
     
     private let appetizerURL = baseURL + "appetizers"
+    
+    let cache: NSCache = NSCache<NSString, UIImage>()
     
     func getAppetizers(completionHandler: @escaping (Result<[Appetizer], APError>) -> Void) {
         
@@ -55,6 +57,40 @@ final class NetworkManager {
                  completionHandler(.failure(.invalidData))
              }
         })
+        task.resume()
+    }
+    
+    func downloadImage(fromURL urlString: String, completionHandler: @escaping (UIImage?) -> Void ){
+        
+        let cacheKey = NSString(string: urlString)
+        
+        if let image = cache.object(forKey: cacheKey) {
+            completionHandler(image)
+            return
+        }
+        
+        guard let url = URL(string: urlString) else {
+            
+            completionHandler(nil)
+            return
+        }
+        
+        let urlRequest = URLRequest(url: url)
+        
+        let task = URLSession.shared.dataTask(with: urlRequest, completionHandler: { data, response, error in
+            
+            
+            guard let data = data, let image = UIImage(data: data) else {
+                
+                completionHandler(nil)
+                return
+            }
+            
+            self.cache.setObject(image, forKey: cacheKey)
+            completionHandler(image)
+            
+        })
+        
         task.resume()
     }
 }
