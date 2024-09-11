@@ -30,33 +30,12 @@ struct AppetizerDetailView: View {
                     .fontWeight(.medium)
                 
                 HStack(spacing: 40) {
-                    VStack(spacing: 5) {
-                        Text("Calories")
-                            .bold()
-                            .font(.caption)
-                        Text("\(appetizerDetails.calories)" + " g")
-                            .foregroundColor(.secondary)
-                            .fontWeight(.semibold)
-                            .italic()
-                    }
-                    VStack(spacing: 5) {
-                        Text("Carbs")
-                            .bold()
-                            .font(.caption)
-                        Text("\(appetizerDetails.carbs)" + " g")
-                            .foregroundColor(.secondary)
-                            .fontWeight(.semibold)
-                            .italic()
-                    }
-                    VStack(spacing: 5) {
-                        Text("Protein")
-                            .bold()
-                            .font(.caption)
-                        Text("\(appetizerDetails.protein)" + " g")
-                            .foregroundColor(.secondary)
-                            .fontWeight(.semibold)
-                            .italic()
-                    }
+                    DietDetailView(title: "Calories"
+                                   , description: "\(appetizerDetails.calories) g")
+                    DietDetailView(title: "Carbs"
+                                   , description: "\(appetizerDetails.carbs)   g")
+                    DietDetailView(title: "Protein"
+                                   , description: "\(appetizerDetails.protein)  g")
                 }
             }
             
@@ -78,18 +57,7 @@ struct AppetizerDetailView: View {
                 Button(action: {
                     isShowingDetailView = false
                 }, label: {
-                    ZStack {
-                        
-                        Circle()
-                            .frame(width: 30, height: 30)
-                            .foregroundColor(Color(.white))
-                            .opacity(0.7)
-                        Image(systemName: "xmark")
-                            .imageScale(.small)
-                            .frame(width: 44, height: 44)
-                            .foregroundColor(.black)
-                    }
-                   
+                    XButton()
                 })
             }
     }
