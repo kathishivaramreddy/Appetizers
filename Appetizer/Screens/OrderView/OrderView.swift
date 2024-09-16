@@ -14,34 +14,44 @@ struct OrderView: View {
     
     var body: some View {
         NavigationStack {
-            VStack {
-                List {
-                    
-                    ForEach(orderedAppetizer) {  appetizer in
+            ZStack {
+                
+                VStack {
+                    List {
                         
-                        AppetizerListCellView(appetizer: appetizer)
-                        
-                    }.onDelete(perform: { indexSet in
-                        for index in indexSet {
-                            orderedAppetizer.remove(at: index)
+                        ForEach(orderedAppetizer) {  appetizer in
+                            
+                            AppetizerListCellView(appetizer: appetizer)
+                            
                         }
-                        totalOrderPrice = Double(orderedAppetizer.reduce(0) { partialResult, appetizer in
-                            partialResult + appetizer.price
+                       
+                        .onDelete(perform: { indexSet in
+                            for index in indexSet {
+                                orderedAppetizer.remove(at: index)
+                            }
+                            totalOrderPrice = Double(orderedAppetizer.reduce(0) { partialResult, appetizer in
+                                partialResult + appetizer.price
+                            })
                         })
-                    })
-                  
+                      
+                        
+                    } .listStyle(.plain)
                     
+                  
+                    APButton(title: "$\(totalOrderPrice, specifier: "%.2f") Place Order")
+                        .padding(.bottom, 20)
+                        .onAppear {
+                            totalOrderPrice = Double(orderedAppetizer.reduce(0) { partialResult, appetizer in
+                                partialResult + appetizer.price
+                            })
+                        }
                 }
                 
-                Spacer()
-                APButton(title: "$\(totalOrderPrice, specifier: "%.2f") Place Order")
-                    .padding(.bottom, 20)
-                    .onAppear {
-                        totalOrderPrice = Double(orderedAppetizer.reduce(0) { partialResult, appetizer in
-                            partialResult + appetizer.price
-                        })
-                    }
+                if orderedAppetizer.isEmpty {
+                    EmptyState(imageName: "empty-order", title: "Please order appetizers here.")
+                }
             }
+          
                 .navigationTitle("Order")
         }
        

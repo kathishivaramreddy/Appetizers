@@ -31,6 +31,7 @@
 		F5D4263D2C97FC3800DC0DA3 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D4263C2C97FC3800DC0DA3 /* AccountViewModel.swift */; };
 		F5D426402C97FF1800DC0DA3 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D4263F2C97FF1800DC0DA3 /* String+Ext.swift */; };
 		F5D426422C98802500DC0DA3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D426412C98802500DC0DA3 /* User.swift */; };
+		F5D426442C98D55800DC0DA3 /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D426432C98D55800DC0DA3 /* EmptyState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		F5D4263C2C97FC3800DC0DA3 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		F5D4263F2C97FF1800DC0DA3 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		F5D426412C98802500DC0DA3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F5D426432C98D55800DC0DA3 /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,6 +248,7 @@
 				F5D426362C92106A00DC0DA3 /* APButton.swift */,
 				F5D426382C92114500DC0DA3 /* XButton.swift */,
 				F5D4263A2C92124300DC0DA3 /* DietDetailView.swift */,
+				F5D426432C98D55800DC0DA3 /* EmptyState.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -395,6 +398,7 @@
 				F5D4263B2C92124300DC0DA3 /* DietDetailView.swift in Sources */,
 				F5D426392C92114500DC0DA3 /* XButton.swift in Sources */,
 				F5D426292C8D51AA00DC0DA3 /* RemoteImage.swift in Sources */,
+				F5D426442C98D55800DC0DA3 /* EmptyState.swift in Sources */,
 				F5D426252C8CC32B00DC0DA3 /* AppetizerListViewModel.swift in Sources */,
 				F5D425EF2C865C7400DC0DA3 /* AppetizerTabView.swift in Sources */,
 				F5D425ED2C865C7400DC0DA3 /* AppetizerApp.swift in Sources */,
