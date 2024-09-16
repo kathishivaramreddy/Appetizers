@@ -28,6 +28,8 @@
 		F5D426372C92106A00DC0DA3 /* APButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D426362C92106A00DC0DA3 /* APButton.swift */; };
 		F5D426392C92114500DC0DA3 /* XButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D426382C92114500DC0DA3 /* XButton.swift */; };
 		F5D4263B2C92124300DC0DA3 /* DietDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D4263A2C92124300DC0DA3 /* DietDetailView.swift */; };
+		F5D4263D2C97FC3800DC0DA3 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D4263C2C97FC3800DC0DA3 /* AccountViewModel.swift */; };
+		F5D426402C97FF1800DC0DA3 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D4263F2C97FF1800DC0DA3 /* String+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,8 @@
 		F5D426362C92106A00DC0DA3 /* APButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APButton.swift; sourceTree = "<group>"; };
 		F5D426382C92114500DC0DA3 /* XButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XButton.swift; sourceTree = "<group>"; };
 		F5D4263A2C92124300DC0DA3 /* DietDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietDetailView.swift; sourceTree = "<group>"; };
+		F5D4263C2C97FC3800DC0DA3 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		F5D4263F2C97FF1800DC0DA3 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				F5D426182C8A0F0600DC0DA3 /* AccountView.swift */,
+				F5D4263C2C97FC3800DC0DA3 /* AccountViewModel.swift */,
 			);
 			path = AccountView;
 			sourceTree = "<group>";
@@ -208,6 +213,7 @@
 		F5D426302C8E404E00DC0DA3 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				F5D4263E2C97FF0A00DC0DA3 /* Extensions */,
 				F5D426312C8E405600DC0DA3 /* Manager */,
 			);
 			path = Utilities;
@@ -239,6 +245,14 @@
 				F5D4263A2C92124300DC0DA3 /* DietDetailView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		F5D4263E2C97FF0A00DC0DA3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F5D4263F2C97FF1800DC0DA3 /* String+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -371,6 +385,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5D426402C97FF1800DC0DA3 /* String+Ext.swift in Sources */,
 				F5D4261D2C8A2FCA00DC0DA3 /* Appetizer.swift in Sources */,
 				F5D426232C8CBA0200DC0DA3 /* APError.swift in Sources */,
 				F5D426192C8A0F0600DC0DA3 /* AccountView.swift in Sources */,
@@ -386,6 +401,7 @@
 				F5D426372C92106A00DC0DA3 /* APButton.swift in Sources */,
 				F5D426272C8CD9ED00DC0DA3 /* Alert.swift in Sources */,
 				F5D426172C8A0ED800DC0DA3 /* OrderView.swift in Sources */,
+				F5D4263D2C97FC3800DC0DA3 /* AccountViewModel.swift in Sources */,
 				F5D4261B2C8A0F1A00DC0DA3 /* AppetizerListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
