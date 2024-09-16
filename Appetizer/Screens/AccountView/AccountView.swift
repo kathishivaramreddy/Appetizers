@@ -16,15 +16,15 @@ struct AccountView: View {
             Form {
                 Section(header: Text("Personal Info")) {
                     
-                    TextField("First Name", text: $accountViewModel.firstName)
+                    TextField("First Name", text: $accountViewModel.user.firstName)
                         .autocapitalization(.none)
-                    TextField("Last Name", text: $accountViewModel.lastName)
+                    TextField("Last Name", text: $accountViewModel.user.lastName)
                         .textInputAutocapitalization(.never)
-                    TextField( "Email", text: $accountViewModel.email)
+                    TextField( "Email", text: $accountViewModel.user.email)
                         .keyboardType (.emailAddress)
                         .autocapitalization(.none)
                         .disableAutocorrection(true)
-                    DatePicker( "Birthday", selection: $accountViewModel.birthdate, displayedComponents: .date)
+                    DatePicker( "Birthday", selection: $accountViewModel.user.birthdate, displayedComponents: .date)
                     Button {
                         accountViewModel.saveChanges()
                         print("Save")
@@ -34,8 +34,8 @@ struct AccountView: View {
                 }.textInputAutocapitalization(.never)
                 
                 Section(header: Text ("Requests")) {
-                    Toggle( "Extra Napkins", isOn: $accountViewModel.extraNapkins)
-                    Toggle( "Frequent Refills", isOn: $accountViewModel.frequentRefills)
+                    Toggle( "Extra Napkins", isOn: $accountViewModel.user.extraNapkins)
+                    Toggle( "Frequent Refills", isOn: $accountViewModel.user.frequentRefills)
                 }
             }.navigationTitle("Account")
         }.alert(item: $accountViewModel.alertItem) { item in
