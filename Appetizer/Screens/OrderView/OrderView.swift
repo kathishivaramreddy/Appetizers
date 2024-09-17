@@ -9,8 +9,7 @@ import SwiftUI
 
 struct OrderView: View {
     
-    @State var orderedAppetizer = MockData.orderItems
-    @State var totalOrderPrice = 0.0
+    @EnvironmentObject var order: Order
     
     var body: some View {
         NavigationStack {
@@ -19,35 +18,27 @@ struct OrderView: View {
                 VStack {
                     List {
                         
-                        ForEach(orderedAppetizer) {  appetizer in
+                        ForEach(order.items) {  appetizer in
                             
                             AppetizerListCellView(appetizer: appetizer)
                             
                         }
                        
                         .onDelete(perform: { indexSet in
-                            for index in indexSet {
-                                orderedAppetizer.remove(at: index)
-                            }
-                            totalOrderPrice = Double(orderedAppetizer.reduce(0) { partialResult, appetizer in
-                                partialResult + appetizer.price
-                            })
+                            
+                            order.delete(indexSet)
+                            
                         })
                       
                         
                     } .listStyle(.plain)
                     
                   
-                    APButton(title: "$\(totalOrderPrice, specifier: "%.2f") Place Order")
+                    APButton(title: "$\(order.totalPrice, specifier: "%.2f") Place Order")
                         .padding(.bottom, 20)
-                        .onAppear {
-                            totalOrderPrice = Double(orderedAppetizer.reduce(0) { partialResult, appetizer in
-                                partialResult + appetizer.price
-                            })
-                        }
                 }
                 
-                if orderedAppetizer.isEmpty {
+                if order.items.isEmpty {
                     EmptyState(imageName: "empty-order", title: "Please order appetizers here.")
                 }
             }

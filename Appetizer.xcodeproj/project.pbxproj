@@ -32,6 +32,7 @@
 		F5D426402C97FF1800DC0DA3 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D4263F2C97FF1800DC0DA3 /* String+Ext.swift */; };
 		F5D426422C98802500DC0DA3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D426412C98802500DC0DA3 /* User.swift */; };
 		F5D426442C98D55800DC0DA3 /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D426432C98D55800DC0DA3 /* EmptyState.swift */; };
+		F5D426462C99E04000DC0DA3 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D426452C99E04000DC0DA3 /* Order.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		F5D4263F2C97FF1800DC0DA3 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		F5D426412C98802500DC0DA3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F5D426432C98D55800DC0DA3 /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
+		F5D426452C99E04000DC0DA3 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				F5D426162C8A0ED800DC0DA3 /* OrderView.swift */,
+				F5D426452C99E04000DC0DA3 /* Order.swift */,
 			);
 			path = OrderView;
 			sourceTree = "<group>";
@@ -397,6 +400,7 @@
 				F5D426192C8A0F0600DC0DA3 /* AccountView.swift in Sources */,
 				F5D4263B2C92124300DC0DA3 /* DietDetailView.swift in Sources */,
 				F5D426392C92114500DC0DA3 /* XButton.swift in Sources */,
+				F5D426462C99E04000DC0DA3 /* Order.swift in Sources */,
 				F5D426292C8D51AA00DC0DA3 /* RemoteImage.swift in Sources */,
 				F5D426442C98D55800DC0DA3 /* EmptyState.swift in Sources */,
 				F5D426252C8CC32B00DC0DA3 /* AppetizerListViewModel.swift in Sources */,
